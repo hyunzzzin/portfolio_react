@@ -1,0 +1,20 @@
+
+.logoImg{
+  width: 5em;
+  height: 3em;
+  margin-left: 4em;
+}
+.logo{
+  width: 4em;
+  height: 2.7em;
+  margin-left: 4em;
+  color: white;
+  font-weight: bold;
+}
+.title {
+  margin-left: 1rem;
+}
+.header_category {
+  justify-content: space-evenly;
+
+}
