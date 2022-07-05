@@ -1,3 +1,5 @@
+import '../src/_statics/bootstrap-5.2.0/css/bootstrap.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

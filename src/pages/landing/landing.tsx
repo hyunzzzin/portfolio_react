@@ -1,14 +1,21 @@
 import React ,{ useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from "react-bootstrap";
+import './landing.css';
+
 
 const Landing: React.FC<any> = (props:any): JSX.Element =>{
     const {setFlag} = props;
     return (
         <>
-            <Button onClick={()=>{setFlag(true)}}>
-                포트폴리오 보러가기
-            </Button>
+            <div className="container">
+                <div style={{display:'row'}}>
+                    <div className="center spinner-grow" role="status">
+                        <span className="visually-hidden"></span>
+                    </div>
+                    <br />
+                    <br />
+                    <span>페이지를 불러오는 중..</span>
+                </div>
+            </div>
         </>
     )
 };
