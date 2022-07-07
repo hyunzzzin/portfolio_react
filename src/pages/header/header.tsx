@@ -5,36 +5,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Col, Container, Nav, Navbar} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCode } from '@fortawesome/free-solid-svg-icons'
-
+import Sidebar from '../../common/Sidebar'
 
 const Header: React.FC<any> = (): JSX.Element =>{
-    const category = ['Introduce','Product','Board'];
-
-//fsdfsdfs
+    
     return (
         <>
-            <Navbar bg="dark" variant="dark">
-                <FontAwesomeIcon icon={faCode} className="logo"/>
-                {/*<img className="logoImg" src={logo} />*/}
-                <Navbar.Brand href="/home" className="title">안현진 포트폴리오</Navbar.Brand>
-                    <Container>
-                            <Col xs={10}>
-                            <Nav className="me-auto header_category">
-                                <>
-                                {_.map(category,(el,i)=>{
-                                    console.log(el)
-                                    return (
-                                        <>
-                                            <Nav.Link href={'/'+el} key={i}>{el}</Nav.Link>
-                                        </>
-                                    )
-                                })}
-                                </>
+            <nav className="navbar navbar-expand-lg bg-dark">
+                <div className="container-fluid">
+                    <a className="navbar-brand text-white" href="/">안현진 포트폴리오</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            </Nav>
-                            </Col>
-                    </Container>
-            </Navbar>
+                        </ul>
+                    </div>
+                    <button className="btn btn-light rounded-pill" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#hamberger" aria-controls="offcanvasRight">
+                        GOGO
+                    </button>
+                </div>
+            </nav>
+                    <Sidebar />
         </>
     )
 }
