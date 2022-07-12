@@ -3,14 +3,22 @@ import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Landing from './pages/landing/landing'
 import Header from './pages/header/header'
-function App() {
+import Main from './pages/main/main'
+import Product from './pages/product/product'
+import Toast from './pages/_components/toastr'
+import { Routers } from './routers';
+
+const App: React.FC<any> = (): JSX.Element => {
   const [ flag , setFlag ] = useState(false)
-    console.log(flag);
 
 
   return (
     <>
+      <Toast />
+
       <Header />
+          <Routers />
+          {/*<Main />*/}
     </>
   );
 }

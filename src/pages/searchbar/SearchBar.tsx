@@ -5,7 +5,7 @@ import {Col, Container, Nav, Navbar} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import Sidebar from '../../common/Sidebar';
-import toastr from 'toastr'
+import toastr from '../_components/toastr';
 
 const SearchBar: React.FC<any> = (): JSX.Element =>{
     const [ searchFlag , setSearchFlag ] = useState('')
@@ -16,6 +16,8 @@ const SearchBar: React.FC<any> = (): JSX.Element =>{
             window.open('https://www.google.com/search?q=' + searchText, '_blanks')
         } else if(searchFlag === 'naver'){
             window.open(' https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=' + searchText, '_blanks')
+        } else if (searchFlag === ''){
+            window?.toast('error','검색엔진을 선택해주세요 !')
         }
     }
 
