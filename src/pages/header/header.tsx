@@ -6,7 +6,7 @@ import {Col, Container, Nav, Navbar} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import Sidebar from '../../common/Sidebar'
-
+import SearchBar from '../searchbar/SearchBar'
 const Header: React.FC<any> = (): JSX.Element =>{
     
     return (
@@ -19,6 +19,7 @@ const Header: React.FC<any> = (): JSX.Element =>{
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
+                    <SearchBar />
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -30,7 +31,7 @@ const Header: React.FC<any> = (): JSX.Element =>{
                     </button>
                 </div>
             </nav>
-                    <Sidebar />
+            <Sidebar />
         </>
     )
 }
