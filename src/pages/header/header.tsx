@@ -19,7 +19,9 @@ const Header: React.FC<any> = (): JSX.Element =>{
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <SearchBar />
+                    <div className={"col-5"}>
+                        <SearchBar />
+                    </div>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -27,7 +29,7 @@ const Header: React.FC<any> = (): JSX.Element =>{
                     </div>
                     <button className="btn btn-light rounded-pill" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#hamberger" aria-controls="offcanvasRight">
-                        GOGO
+                        MENU
                     </button>
                 </div>
             </nav>
