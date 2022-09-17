@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Route, Routes ,Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 
 
 import Main from './pages/main/main'
@@ -10,12 +10,13 @@ const Routers: React.FC<any> = (): JSX.Element => {
     console.log('1')
 
     return (
-            // <Routes>
-            //     <Route path="/" element={ <Main /> } />
-            //     <Route path="/product" element={<Product />} />
-            // </Routes>
-        <div>fsdfdsf</div>
-    );
-};
+        <Router>
+            <Routes>
+                <Route path="/" element={<Main />}/>
+                <Route path="/product" element={<Product />}/>
+            </Routes>
+        </Router>
+    )
+}
 
 export { Routers };

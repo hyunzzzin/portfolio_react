@@ -8,7 +8,8 @@ import { faCode } from '@fortawesome/free-solid-svg-icons'
 import Sidebar from '../../common/Sidebar'
 import SearchBar from '../searchbar/SearchBar'
 const Header: React.FC<any> = (): JSX.Element =>{
-    
+    //
+
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-dark">

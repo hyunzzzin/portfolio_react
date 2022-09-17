@@ -1,17 +1,12 @@
 import React from 'react'
 
 const Main = () => {
-    console.log('gsgsggsggs')
     return (
         <>
-            <div>ㅎㄴㅎㄴ</div>
-            <div>ㅎㄴㅎㄴ</div>
-            <div>ㅎㄴㅎㄴ</div>
-            <div>ㅎㄴㅎㄴ</div>
-            <div>ㅎㄴㅎㄴ</div>
-            <div>ㅎㄴㅎㄴ</div>
-            <div>ㅎㄴㅎㄴ</div>
-            <div>ㅎㄴㅎㄴ</div>
+            <div className={"container-fluid vh-100"}>
+                <div></div>
+            </div>
+
         </>
     )
 }

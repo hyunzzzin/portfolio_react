@@ -15,9 +15,10 @@ const App: React.FC<any> = (): JSX.Element => {
   return (
     <>
       <Toast />
-
       <Header />
+        {/*<Landing />*/}
           <Routers />
+          {/*<Main />*/}
           {/*<Main />*/}
     </>
   );
