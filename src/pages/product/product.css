@@ -1,0 +1,9 @@
+.section {
+    text-align-last: center;
+}
+.cardImg {
+    border-radius: 16px 16px 0 0;
+}
+.cardSection{
+    gap:32px
+}
